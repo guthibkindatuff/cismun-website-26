@@ -4,40 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CISMUN 2026</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
+
+<nav class="navbar">
+    <div class="logo">CISMUN 2026</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#committees">Committees</a></li>
+        <li><a href="#">Secretariat</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
         <h1>CISMUN 2026</h1>
-        <p>Kolkata | August 7th-9th, 2026</p>
-    </header>
-
-    <section class="counter-container">
-        <h2>Days Until Conference</h2>
-        <div id="counter">
-            <span class="time-period">Days</span>: <span id="days">00</span> |
-            <span class="time-period">Hours</span>: <span id="hours">00</span> |
-            <span class="time-period">Minutes</span>: <span id="minutes">00</span> |
-            <span class="time-period">Seconds</span>: <span id="seconds">00</span>
+        <p class="location">Kolkata | August 7th–9th, 2026</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn primary">Register Now</a>
+            <a href="#" class="btn secondary">Learn More</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <nav class="committees-nav">
-        <h2>Committees</h2>
-        <ul>
-            <li><a href="ga.html">General Assembly</a></li>
-            <li><a href="sc.html">Security Council</a></li>
-            <li><a href="ecosoc.html">Economic and Social Council</a></li>
-            <li><a href="hrc.html">Human Rights Council</a></li>
-            <li><a href="unesco.html">UNESCO</a></li>
-            <li><a href="who.html">World Health Organization</a></li>
-        </ul>
-    </nav>
+<section class="countdown">
+    <h2>Days Until Conference</h2>
 
-    <footer>
-        <p>&copy; 2026 CISMUN. All rights reserved.</p>
-    </footer>
+    <div class="countdown-container">
+        <div class="time-box"><h3 id="days">00</h3><p>Days</p></div>
+        <div class="time-box"><h3 id="hours">00</h3><p>Hours</p></div>
+        <div class="time-box"><h3 id="minutes">00</h3><p>Minutes</p></div>
+        <div class="time-box"><h3 id="seconds">00</h3><p>Seconds</p></div>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<section id="committees" class="committees">
+
+<h2>Committees</h2>
+
+<div class="committee-grid">
+
+<a href="ga.html" class="committee-card">
+<i class="fa-solid fa-building-columns"></i>
+<p>General Assembly</p>
+</a>
+
+<a href="sc.html" class="committee-card">
+<i class="fa-solid fa-shield"></i>
+<p>Security Council</p>
+</a>
+
+<a href="ecosoc.html" class="committee-card">
+<i class="fa-solid fa-chart-line"></i>
+<p>Economic and Social Council</p>
+</a>
+
+<a href="hrc.html" class="committee-card">
+<i class="fa-solid fa-scale-balanced"></i>
+<p>Human Rights Council</p>
+</a>
+
+<a href="unesco.html" class="committee-card">
+<i class="fa-solid fa-landmark"></i>
+<p>UNESCO</p>
+</a>
+
+<a href="who.html" class="committee-card">
+<i class="fa-solid fa-globe"></i>
+<p>World Health Organization</p>
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 CISMUN. All rights reserved.</p>
+
+<div class="socials">
+<i class="fab fa-instagram"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
